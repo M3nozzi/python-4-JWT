@@ -2,8 +2,18 @@
 platform darwin -- Python 3.8.3, pytest-5.4.3, py-1.9.0, pluggy-0.13.1 -- /usr/local/opt/python@3.8/bin/python3.8
 cachedir: .pytest_cache
 rootdir: /Users/menozzi/codenation/python-8
-collecting ... collected 1 item
+collecting ... collected 3 items
 
-test_main.py::TestChallenge4::test_create_token PASSED                   [100%]
+test_submit.py::TestChallenge4::test_verify_signature PASSED             [ 33%]
+test_submit.py::TestChallenge4::test_verify_signature_fail PASSED        [ 66%]
+test_submit.py::TestChallenge4::test_create_token PASSED                 [100%]
 
-============================== 1 passed in 0.04s ===============================
+=============================== warnings summary ===============================
+/usr/local/lib/python3.8/site-packages/_pytest/junitxml.py:417
+  /usr/local/lib/python3.8/site-packages/_pytest/junitxml.py:417: PytestDeprecationWarning: The 'junit_family' default value will change to 'xunit2' in pytest 6.0.
+  Add 'junit_family=xunit1' to your pytest.ini file to keep the current format in future versions of pytest and silence this warning.
+    _issue_warning_captured(deprecated.JUNIT_XML_DEFAULT_FAMILY, config.hook, 2)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+------ generated xml file: /Users/menozzi/codenation/python-8/output.xml -------
+========================= 3 passed, 1 warning in 0.09s =========================
